@@ -1,5 +1,6 @@
 using Grpc.Core;
 using Inventory;
+using OrderService.Mappers;
 using OrderService.Repositories;
 using Product;
 
@@ -60,7 +61,7 @@ public class OrderServiceImpl(
             logger.LogInformation("Order {OrderId} created with {ItemCount} items, total {Total}",
                 order.Id, order.Items.Count, order.Total);
 
-            return MapOrder(order);
+            return order.ToResponse();
         }
         catch
         {
@@ -76,7 +77,7 @@ public class OrderServiceImpl(
         if (order is null)
             throw new RpcException(new Status(StatusCode.NotFound, $"Order {request.OrderId} not found"));
 
-        return MapOrder(order);
+        return order.ToResponse();
     }
 
     public override async Task<Order.OrderListResponse> ListOrders(Order.ListOrdersRequest request, ServerCallContext context)
@@ -84,7 +85,7 @@ public class OrderServiceImpl(
         var orders = await orderRepo.GetAllAsync(context.CancellationToken);
 
         var response = new Order.OrderListResponse();
-        response.Orders.AddRange(orders.Select(MapOrder));
+        response.Orders.AddRange(orders.Select(o => o.ToResponse()));
         return response;
     }
 
@@ -100,20 +101,4 @@ public class OrderServiceImpl(
         }
     }
 
-    private static Order.OrderResponse MapOrder(Entities.Order o)
-    {
-        var response = new Order.OrderResponse
-        {
-            OrderId = o.Id,
-            Status = o.Status,
-            Total = (double)o.Total,
-            CreatedAt = o.CreatedAt.ToString("O")
-        };
-        response.Items.AddRange(o.Items.Select(i => new Order.OrderItem
-        {
-            ProductId = i.ProductId,
-            Quantity = i.Quantity
-        }));
-        return response;
-    }
 }

@@ -10,3 +10,4 @@
 /Users/armad/Downloads/C_Sharp/ECommerceMicroservices/ECommerce.Contracts/obj/Debug/net10.0/refint/ECommerce.Contracts.dll
 /Users/armad/Downloads/C_Sharp/ECommerceMicroservices/ECommerce.Contracts/obj/Debug/net10.0/ECommerce.Contracts.pdb
 /Users/armad/Downloads/C_Sharp/ECommerceMicroservices/ECommerce.Contracts/obj/Debug/net10.0/ref/ECommerce.Contracts.dll
+/Users/armad/Downloads/C_Sharp/ECommerceMicroservices/ECommerce.Contracts/obj/Debug/net10.0/ECommerce.Contracts.sourcelink.json

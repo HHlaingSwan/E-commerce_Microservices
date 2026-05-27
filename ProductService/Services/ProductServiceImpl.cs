@@ -1,5 +1,6 @@
 using Grpc.Core;
 using Product;
+using ProductService.Mappers;
 using ProductService.Repositories;
 using static Product.ProductService;
 
@@ -18,7 +19,7 @@ public class ProductServiceImpl(
 
         logger.LogInformation("Product {Id} retrieved: {Name}", product.Id, product.Name);
 
-        return MapProduct(product);
+        return product.ToResponse();
     }
 
     public override async Task<ProductListResponse> ListProducts(Empty request, ServerCallContext context)
@@ -26,16 +27,7 @@ public class ProductServiceImpl(
         var products = await productRepo.GetAllAsync(context.CancellationToken);
 
         var response = new ProductListResponse();
-        response.Products.AddRange(products.Select(MapProduct));
+        response.Products.AddRange(products.Select(p => p.ToResponse()));
         return response;
     }
-
-    private static ProductResponse MapProduct(Entities.Product p) => new()
-    {
-        Id = p.Id,
-        Name = p.Name,
-        Description = p.Description,
-        Price = (double)p.Price,
-        Category = p.Category
-    };
 }
