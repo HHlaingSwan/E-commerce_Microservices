@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "8y91B18lteM=",
+  "success": true,
+  "projectFilePath": "/Users/armad/Downloads/C_Sharp/ECommerceMicroservices/ECommerce.Contracts/ECommerce.Contracts.csproj",
+  "expectedPackageFiles": [
+    "/Users/armad/.nuget/packages/grpc.core.api/2.64.0/grpc.core.api.2.64.0.nupkg.sha512"
+  ],
+  "logs": []
+}

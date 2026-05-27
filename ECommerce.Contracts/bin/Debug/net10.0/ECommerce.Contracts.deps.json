@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "ECommerce.Contracts/1.0.0": {
+        "dependencies": {
+          "Grpc.Core.Api": "2.64.0"
+        },
+        "runtime": {
+          "ECommerce.Contracts.dll": {}
+        }
+      },
+      "Grpc.Core.Api/2.64.0": {
+        "runtime": {
+          "lib/netstandard2.1/Grpc.Core.Api.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.64.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ECommerce.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Grpc.Core.Api/2.64.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CFwvZT56TU9D4Znz2qGz2S7XtXjo+t2DlTsa12vs+rKRwOuUI3dv/5vnh7LRgMDcumWOzR8L6IbtCYtJmcp3Rg==",
+      "path": "grpc.core.api/2.64.0",
+      "hashPath": "grpc.core.api.2.64.0.nupkg.sha512"
+    }
+  }
+}

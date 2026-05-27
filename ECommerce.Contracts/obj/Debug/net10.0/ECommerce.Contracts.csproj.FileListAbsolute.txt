@@ -1,0 +1,12 @@
+/Users/armad/Downloads/C_Sharp/ECommerceMicroservices/ECommerce.Contracts/bin/Debug/net10.0/ECommerce.Contracts.deps.json
+/Users/armad/Downloads/C_Sharp/ECommerceMicroservices/ECommerce.Contracts/bin/Debug/net10.0/ECommerce.Contracts.dll
+/Users/armad/Downloads/C_Sharp/ECommerceMicroservices/ECommerce.Contracts/bin/Debug/net10.0/ECommerce.Contracts.pdb
+/Users/armad/Downloads/C_Sharp/ECommerceMicroservices/ECommerce.Contracts/obj/Debug/net10.0/ECommerce.Contracts.csproj.AssemblyReference.cache
+/Users/armad/Downloads/C_Sharp/ECommerceMicroservices/ECommerce.Contracts/obj/Debug/net10.0/ECommerce.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+/Users/armad/Downloads/C_Sharp/ECommerceMicroservices/ECommerce.Contracts/obj/Debug/net10.0/ECommerce.Contracts.AssemblyInfoInputs.cache
+/Users/armad/Downloads/C_Sharp/ECommerceMicroservices/ECommerce.Contracts/obj/Debug/net10.0/ECommerce.Contracts.AssemblyInfo.cs
+/Users/armad/Downloads/C_Sharp/ECommerceMicroservices/ECommerce.Contracts/obj/Debug/net10.0/ECommerce.Contracts.csproj.CoreCompileInputs.cache
+/Users/armad/Downloads/C_Sharp/ECommerceMicroservices/ECommerce.Contracts/obj/Debug/net10.0/ECommerce.Contracts.dll
+/Users/armad/Downloads/C_Sharp/ECommerceMicroservices/ECommerce.Contracts/obj/Debug/net10.0/refint/ECommerce.Contracts.dll
+/Users/armad/Downloads/C_Sharp/ECommerceMicroservices/ECommerce.Contracts/obj/Debug/net10.0/ECommerce.Contracts.pdb
+/Users/armad/Downloads/C_Sharp/ECommerceMicroservices/ECommerce.Contracts/obj/Debug/net10.0/ref/ECommerce.Contracts.dll
